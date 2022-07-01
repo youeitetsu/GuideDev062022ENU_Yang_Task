@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "0f023324-68ca-2557-f56e-56ba7476193e",
+    "Name": "GuideDev062022ENU_Yang",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1656512815000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/GuideDev062022ENU_Yang.csproj",
+    "DependsOn": [
+      {
+        "UId": "d7559847-f38e-410c-baee-6f43bbe80d42",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterpriseSoftkey_ENU"
+      }
+    ]
+  }
+}
