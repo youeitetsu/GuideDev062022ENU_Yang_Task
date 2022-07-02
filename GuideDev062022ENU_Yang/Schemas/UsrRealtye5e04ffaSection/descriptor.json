@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "3d9182da-1963-4c1e-858b-e094b0745731",
+    "Name": "UsrRealtye5e04ffaSection",
+    "ModifiedOnUtc": "\/Date(1656739853000)\/",
+    "Parent": {
+      "UId": "7912fb69-4fee-429f-8b23-93943c35d66d",
+      "Name": "BaseSectionV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Section schema: \"Realty\""
+  }
+}
