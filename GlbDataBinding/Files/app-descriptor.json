@@ -1,0 +1,19 @@
+{
+  "Name": "GlbDataBinding",
+  "Code": "GlbDataBinding",
+  "Description": "",
+  "Maintainer": "Global",
+  "Icon": "77u/PHN2ZyBpZD0iSWNvbl9wYWdlc18tXzI0eDI0X2hlYXZ5IiBkYXRhLW5hbWU9Ikljb24gfCBwYWdlcyAtIDI0eDI0IHwgaGVhdnkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxyZWN0IGlkPSJSZWN0YW5nbGVfNDI0MjEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDQyNDIxIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBpZD0iU3VidHJhY3Rpb25fMTAwNCIgZGF0YS1uYW1lPSJTdWJ0cmFjdGlvbiAxMDA0IiBkPSJNMTE1NzEtMTMxMjJoLTE0YTIsMiwwLDAsMS0yLTJ2LTEyYTIsMiwwLDAsMSwyLTJoMTRhMiwyLDAsMCwxLDIsMnYxMkEyLDIsMCwwLDEsMTE1NzEtMTMxMjJabS0xNC0xMXY4YTEsMSwwLDAsMCwxLDFoMTJhMSwxLDAsMCwwLDEtMXYtOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTU1MiAxMzE0MikiIGZpbGw9IiNmZmYiLz4KPC9zdmc+",
+  "IconName": "default-app-item-image.svg",
+  "Color": "#FF4013",
+  "MarketplaceLink": "",
+  "HelpLink": "",
+  "OrderLink": "",
+  "SupportEmail": "",
+  "Packages": [
+    {
+      "UId": "06b2f9c5-2217-4cca-9749-77d954e77765",
+      "Name": "GlbDataBinding"
+    }
+  ]
+}
