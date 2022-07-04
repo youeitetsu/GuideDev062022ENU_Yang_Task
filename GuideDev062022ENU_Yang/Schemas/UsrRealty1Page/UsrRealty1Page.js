@@ -25,6 +25,16 @@ define("UsrRealty1Page", ["RightUtilities"], function(RightUtilities) {
 						columns: ["UsrCommissionCoeff"]
 			    },
 			},
+			"UsrManager": {
+				dataValueType: Terrasoft.DataValueType.LOOKUP,
+				lookupListConfig: {
+					filter: function() {
+						const filter =  this.Terrasoft.createColumnFilterWithParameter(this.Terrasoft.ComparisonType.EQUAL,
+							"[SysAdminUnit:Contact:Id].Active", true);
+						return filter;
+					}
+				}				
+			},
 		},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{
@@ -90,7 +100,21 @@ define("UsrRealty1Page", ["RightUtilities"], function(RightUtilities) {
 				}
 			}
 		}/**SCHEMA_BUSINESS_RULES*/,
+		/**publisher*/
+		messages: {
+			"MyMessageCode": {
+        		mode: Terrasoft.MessageMode.PTP,
+        		direction: Terrasoft.MessageDirectionType.PUBLISH
+		    },
+		},
 		methods: {
+			init: function() {
+ 				this.callParent(arguments);
+				
+				// Registering of messages, get result from onMyButtonClick
+    			this.sandbox.registerMessages(this.messages);
+			},
+			//Validation
 			setValidationConfig: function() {
                 /* Call the initialization of the parent view model's validators. */
                 this.callParent(arguments);
@@ -143,6 +167,18 @@ define("UsrRealty1Page", ["RightUtilities"], function(RightUtilities) {
 			onMyButtonClick: function() {
 				this.showInformationDialog("My button was pressed!");
 				this.console.log("Yes, it's true. Our button was pressed.");
+				
+				/*Assigning lookup column value*/
+				var obj = {
+					value: "ad765104-83c4-49ff-84ee-10fb3fc634c3",
+					displayValue: "3. Parking Lot"
+				};
+				this.set("UsrType", obj);
+				
+				/**sandbox publish result*/
+				this.console.log("Message published.");
+				var result = this.sandbox.publish("MyMessageCode", null, []);
+				this.console.log("Subscriber responded: " + result);
 			},
 			getMyButtonEnabled: function() {
 				var result = true;
