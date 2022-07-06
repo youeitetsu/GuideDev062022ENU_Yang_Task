@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8e1ed560-dda0-4a9d-a780-2707195d8a54",
+    "Name": "UsrTestCSharpProcess",
+    "ModifiedOnUtc": "\/Date(1657115662000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Calc average price process",
+    "DependsOn": []
+  }
+}
